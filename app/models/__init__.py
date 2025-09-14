@@ -1,0 +1,1 @@
+from app.models.compromisso_model import Compromisso
