@@ -88,7 +88,10 @@ def deletar_compromisso(id:int):
     try:
         db.session.delete(compromisso)
         db.session.commit()
-        return True
+        return {
+            "mensagem": f"Compromisso com ID {id} foi deletado.",
+            "id": id
+            }
     except Exception as e:
         db.session.rollback()
         raise RuntimeError(f"Erro ao deletar compromisso: {str(e)}")
