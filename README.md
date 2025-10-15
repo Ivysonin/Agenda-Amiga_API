@@ -65,3 +65,7 @@ flask db upgrade
 # Rode a aplicação
 python main.py
 ```
+
+## 📄 Licença
+
+Este projeto está licenciado sob os termos da [Licença MIT](./LICENSE), com cláusula adicional de atribuição.
